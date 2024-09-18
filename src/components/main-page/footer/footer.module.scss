@@ -1,0 +1,26 @@
+.footer {
+  color: white;
+  min-height: 100px;
+  background-color: #0e2b49;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.infoUser {
+  &__email {
+  }
+  &__emailWrapper {
+    display: flex;
+  }
+  &__emailuser {
+  }
+  &__name {
+  }
+  &__nameUser {
+  }
+  &__nameWrapper {
+    display: flex;
+  }
+  &__setting {
+  }
+}
