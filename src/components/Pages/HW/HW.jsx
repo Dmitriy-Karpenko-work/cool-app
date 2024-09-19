@@ -11,12 +11,13 @@ export const HW = () => {
     const styleActiveLink = ({ isActive }) => {
       return isActive ? `${s.link} ${s.active}` : s.link;
     };
-  
+    
     return (
       <>
-        <h1 className={s.hw_h1}>Домашние работы</h1>
+        {/* <h1 className={s.hw_h1}>Домашние работы</h1> */}
         <nav className={s.nav_hw}>
-          <NavLink className={styleActiveLink} to="/HW/1">
+          <NavLink className={styleActiveLink}
+           to="/HW/1">
             Домашняя работа - 3
           </NavLink>
           <NavLink className={styleActiveLink} to="/HW/2">

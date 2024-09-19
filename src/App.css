@@ -12,5 +12,16 @@ html, body {
 
 .main-content {
   flex-grow: 1;
+
+}
+
+
+.light {
   background-color: grey;
+  color: black;
+}
+
+.dark {
+  color: aliceblue;
+  background-color: black;
 }

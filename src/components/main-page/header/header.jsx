@@ -1,6 +1,7 @@
 import React from 'react'
 import s from "./header.module.scss"
 import { NavLink } from 'react-router-dom';
+import { styleActiveLink } from '../../utils/utils_isActive';
 
 
 export const Header = () => {
@@ -25,7 +26,7 @@ export const Header = () => {
             <NavLink className={styleActiveLink} to="/seminar/*">
               Семинары
             </NavLink>
-            <NavLink className={styleActiveLink} to="/somethingElse/*">
+            <NavLink className={styleActiveLink} to="/practice/*">
               практика
             </NavLink>
         </nav>

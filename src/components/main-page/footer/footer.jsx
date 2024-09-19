@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import s from './footer.module.scss';
+import { useTheme } from '../../../contexts/ThemeContext';
+
 // import { Modal } from './modal';
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!проблема в импорте файла
 //я хз почему не работает
 
+
+
+
 export const Footer = () => {
+  
+  const { theme } = useTheme(); 
+
   const [isModalActive, setModalActive] = useState(false);
 
   const handleModalOpen = () => {
@@ -36,6 +44,7 @@ export const Footer = () => {
         )}
       </div> */}
       </div>
+      <h2>Выбрана тема: {theme}</h2>
       <h1>Footer</h1>
     </footer>
   );
